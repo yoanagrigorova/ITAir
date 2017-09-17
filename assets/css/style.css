@@ -1,0 +1,63 @@
+body header nav ul li {
+    display: inline-block;
+    margin-top: 1.5em;
+    height: 100%;
+    text-align: center;
+}
+
+body header nav ul li:hover {
+    background-color: white;
+}
+
+body header {
+    display: inline-block;
+    width: 100%;
+}
+
+body header img {
+    float: left;
+    height: 70px;
+    margin-right: 45em;
+}
+
+body header nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    height: 100%;
+    text-align: center;
+}
+
+body header nav ul li a:hover {
+    color: navy;
+}
+
+body header {
+    background-color: navy;
+}
+
+body header~div {
+    background-color: white;
+    width: 100%;
+    display: none;
+}
+
+h1 {
+    color: navy;
+    margin-top: 10px;
+}
+
+h3 {
+    color: purple;
+}
+
+body header~div a {
+    text-decoration: none;
+    margin-left: 2em;
+    margin-top: 10px;
+    width: 25%;
+    float: left;
+}
