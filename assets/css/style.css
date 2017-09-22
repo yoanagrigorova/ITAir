@@ -99,11 +99,14 @@ button:hover {
     opacity: 1;
     box-sizing: border-box;
 }
-.buttons > button {
+.buttons > input {
     display: inline-block;
     width: 100%;
     border-radius: 1em;
-    background-color: #A0A0A0;
+    background-color: #8A8181;
+}
+.buttons > input:hover{
+    background-color: #796D6D;
 }
 .buttons > button > img {
     width: 80px;
