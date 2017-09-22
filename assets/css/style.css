@@ -253,25 +253,31 @@ form#signIn input[type=submit] {
     height: 94%;
     margin: 1em 0.8em;
     border-radius: 1em;
+    padding-top: 1em;
 }
-.search-form > form > .flight-choice{
+
+.search-form>form>.flight-choice {
     margin: 1em;
     border: 1px solid black;
 }
-.search-form > form p {
-    padding: 20px; 
+
+.search-form>form p {
+    padding: 20px;
 }
-.date-picker{
+
+.date-picker {
     margin: 1em;
     border: 1px solid black;
 }
-.passangers{
+
+.passangers {
     margin: 1em;
     border: 1px solid black;
 }
-#search{
-    margin-left:50px;
+
+#search {
+    margin-left: 30px;
     padding: 20px;
     width: 200px;
-    border:none;
+    border: none;
 }
