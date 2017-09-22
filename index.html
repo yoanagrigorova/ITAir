@@ -35,16 +35,39 @@
                 </aside>
                 <div class="search-form">
                     <form action="#">
-                        <fieldset>
+                        <fieldset class="flight-choice">
+                            <p><label for="origin">Origin</label>
+                                <select name="origin" id="origin">
+                                    <option value="a">A</option>
+                                    <option value="b">B</option>
+                                    <option value="c">C</option>
+                                    <option value="d">D</option>
+                                </select></p>
 
+                            <p><label for="destination">Destination</label>
+                                <select name="destination" id="destination">
+                                <option value="z">Z</option>
+                                <option value="x">X</option>
+                                <option value="w">W</option>
+                                <option value="y">Y</option>
+                            </select>
+                            </p>
                         </fieldset>
-                        <fieldset>
-
+                        <fieldset class="date-picker">
+                            <p><label for="departure-date">Departure Date</label>
+                                <input type="date" />
+                            </p>
+                            <p><label for="return-date">Return Date</label>
+                                <input type="date" />
+                            </p>
                         </fieldset>
-                        <fieldset>
-
+                        <fieldset class="passangers">
+                            <p><label for="passnagers">Passangers</label>
+                                <input type="number" min="1" max="15"/>
+                            </p>
                         </fieldset>
                     </form>
+                    <button id="search">SEARCH</button>
                 </div>
             </div>
             <div class="add">
