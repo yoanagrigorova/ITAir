@@ -112,11 +112,10 @@ button:hover {
     width: 80px;
 }
 .add {
-    float: right;
+    display: inline-block;
     background-color: #E83856;
     text-align: left;
     opacity: 0.9;
-    margin: 50px 0 0 150px;
     padding: 30px;
     box-sizing: border-box;
     border-radius: 1em;
@@ -183,9 +182,9 @@ main>section>p {
 
 main>section>article {
     box-sizing: border-box;
-    margin: 1em;
+    margin: 1.08em;
     float: left;
-    width: 22%;
+    width: 22.4%;
     background-color: #ECE7E7;
     ;
 }
