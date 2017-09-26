@@ -62,14 +62,13 @@ document.addEventListener("DOMContentLoaded", function() {
         showMenu(user, "signIn", false);
     }, false)
 
-    var firstName = document.querySelector("form#registration input[placeholder='First name']").value;
-    var lastName = document.querySelector("form#registration input[placeholder='Last name']").value;
-    var phone = document.querySelector("form#registration input[placeholder='Mobile phone']").value;
-    var email = document.querySelector("form#registration input[placeholder='E-mail']").value;
-    var password = document.querySelector("form#registration input[placeholder='Password']").value;
-
     document.getElementById("createUser").addEventListener("click", function(event) {
         event.preventDefault();
+        var firstName = document.querySelector("form#registration input[placeholder='First name']").value;
+        var lastName = document.querySelector("form#registration input[placeholder='Last name']").value;
+        var phone = document.querySelector("form#registration input[placeholder='Mobile phone']").value;
+        var email = document.querySelector("form#registration input[placeholder='E-mail']").value;
+        var password = document.querySelector("form#registration input[placeholder='Password']").value;
         if (firstName && lastName && phone && email && password) {
             users.addUser(firstName, lastName, phone, email, password)
             registrationForm.style.display = "none";
