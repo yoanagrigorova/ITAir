@@ -8,6 +8,7 @@
     <title>ITAir</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/users.js"></script>
     <script src="assets/js/index.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script> -->
@@ -18,188 +19,207 @@
         <img src="assets/images/it-logo.png" alt="" />
         <nav>
             <ul>
-                <li><button type='button'>ПЛАНИРАЙТЕ</button></li>
-                <li><button type='button'>ИНФОРМАЦИЯ</button></li>
-                <li><button type='button'>РЕЗЕРВИРАЙТЕ</button></li>
-                <li><button type='button' id="user">ПОТРЕБИТЕЛ</button></li>
+                <li><button class="nav" type='button'>ПЛАНИРАЙТЕ</button></li>
+                <li><button class="nav" type='button'>ИНФОРМАЦИЯ</button></li>
+                <li><button class="nav" type='button'>РЕЗЕРВИРАЙТЕ</button></li>
+                <li><button class="nav" type='button' id="user">ПОТРЕБИТЕЛ</button></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="main-container">
-            <div class="search">
-                <aside class="buttons">
-                    <input type="image" src="assets/images/plane.png" />
-                    <input type="image" src="assets/images/destination.png" />
-                    <input type="image" src="assets/images/planner.png" />
-                </aside>
-                <div class="search-form">
-                    <form action="#">
-                        <fieldset class="flight-choice">
-                            <p><label for="origin">Origin</label>
-                                <select name="origin" id="origin">
+    <div>
+        <main>
+            <div class="main-container">
+                <div class="search">
+                    <aside class="buttons">
+                        <input type="image" src="assets/images/plane.png" />
+                        <input type="image" src="assets/images/destination.png" />
+                        <input type="image" src="assets/images/planner.png" />
+                    </aside>
+                    <div class="search-form">
+                        <form action="#">
+                            <fieldset class="flight-choice">
+                                <p><label for="origin">Origin</label>
+                                    <select name="origin" id="origin">
                                     <option value="a">A</option>
                                     <option value="b">B</option>
                                     <option value="c">C</option>
                                     <option value="d">D</option>
                                 </select></p>
 
-                            <p><label for="destination">Destination</label>
-                                <select name="destination" id="destination">
+                                <p><label for="destination">Destination</label>
+                                    <select name="destination" id="destination">
                                 <option value="z">Z</option>
                                 <option value="x">X</option>
                                 <option value="w">W</option>
                                 <option value="y">Y</option>
                             </select>
-                            </p>
-                        </fieldset>
-                        <fieldset class="date-picker">
-                            <p><label for="departure-date">Departure Date</label>
-                                <input type="date" />
-                            </p>
-                            <p><label for="return-date">Return Date</label>
-                                <input type="date" />
-                            </p>
-                        </fieldset>
-                        <fieldset class="passangers">
-                            <p><label for="passnagers">Passangers</label>
-                                <input type="number" min="1" max="15"/>
-                            </p>
-                        </fieldset>
-                    </form>
-                    <button id="search">SEARCH</button>
+                                </p>
+                            </fieldset>
+                            <fieldset class="date-picker">
+                                <p><label for="departure-date">Departure Date</label>
+                                    <input type="date" />
+                                </p>
+                                <p><label for="return-date">Return Date</label>
+                                    <input type="date" />
+                                </p>
+                            </fieldset>
+                            <fieldset class="passangers">
+                                <p><label for="passnagers">Passangers</label>
+                                    <input type="number" min="1" max="15" />
+                                </p>
+                            </fieldset>
+                        </form>
+                        <button id="search">SEARCH</button>
+                    </div>
+                </div>
+                <div class="add">
+                    <h2>PRAGUE</h2>
+                    <h3>Top Offer</h3>
+                    <p>Trip to Prague for couples.Seven days and 6 nights.</p>
                 </div>
             </div>
-            <div class="add">
-                <h2>PRAGUE</h2>
-                <h3>Top Offer</h3>
-                <p>Trip to Prague for couples.Seven days and 6 nights.</p>
-            </div>
+            <div class="line"></div>
+            <section name="premium" class="cheap-flights">
+                <p>CHEAP FLIGHTS*</p>
+                <article>
+                    <img src="assets/images/milano.jpg" alt="">
+                    <p>Special offer.Cheap flight form London</p>
+                    <p>MILANO</p>
+                </article>
+                <article>
+                    <img src="assets/images/poland.jpg" alt="">
+                    <p>Special offer.Cheap flight form London</p>
+                    <p>POLAND</p>
+                </article>
+                <article>
+                    <img src="assets/images/vencia.jpg" alt="">
+                    <p>Special offer.Cheap flight form London</p>
+                    <p>VENECIA</p>
+                </article>
+                <article>
+                    <img src="assets/images/vencia.jpg" alt="">
+                    <p>Special offer.Cheap flight form London</p>
+                    <p>VENECIA</p>
+                </article>
+            </section>
+            <section name="partners" class="partnres">
+                <p>PARTNERS OFFERS</p>
+                <article>
+                    <img src="assets/images/booking.jpg" alt="">
+                    <p>BOOKING</p>
+                </article>
+                <article>
+                    <img src="assets/images/carrent.jpg" alt="">
+                    <p>CAR RENTAL</p>
+                </article>
+                <article>
+                    <img src="assets/images/transfer.jpg" alt="">
+                    <p>AIRPORT TRANSFER</p>
+                </article>
+                <article>
+                    <img src="assets/images/transfer.jpg" alt="">
+                    <p>AIRPORT TRANSFER</p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <article>
+                <h4>SERVICES</h4>
+                <ul>
+                    <li><a href="">WIZZ Discount Club</a></li>
+                    <li><a href="">WIZZ Flex</a></li>
+                    <li><a href="">WIZZ Priority Boarding</a></li>
+                    <li><a href="">Seat allocation</a></li>
+                    <li><a href="">Hotels</a></li>
+                    <li><a href="">Car rentals</a></li>
+                    <li><a href="">Airport transfer</a></li>
+                    <li><a href="">All services and fees</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>CUSTOMER SERVICE</h4>
+                <ul>
+                    <li><a href="">Booking with Wizz Air</a></li>
+                    <li><a href="">Baggage</a></li>
+                    <li><a href="">Payments</a></li>
+                    <li><a href="">Special Assistance</a></li>
+                    <li><a href="">Online check-in</a></li>
+                    <li><a href="">General Conditions of Carriage</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>FLIGHTS &amp DESTINATIONS</h4>
+                <ul>
+                    <li><a href="">Current Flight Status</a></li>
+                    <li><a href="">Destinations</a></li>
+                    <li><a href="">Timetable</a></li>
+                    <li><a href="">Cancellation information</a></li>
+                </ul>
+                <h4>FOLLOW US</h4>
+                <a href=""><img src="assets/images/yt-logo.png" alt=""></a>
+                <a href=""><img src="assets/images/fb-logo.png" alt=""></a>
+                <a href=""><img src="assets/images/Twitter-logo.png" alt=""></a>
+                <a href=""><img src="assets/images/insta-logo.png" alt=""></a>
+            </article>
+            <article>
+                <h4>ABOUT WIZZ AIR</h4>
+                <ul>
+                    <li><a href="">Company information</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">WIZZ Magazine</a></li>
+                    <li><a href="">Career</a></li>
+                    <li><a href="">Press Office</a></li>
+                    <li><a href="">For travel agents &amp partners</a></li>
+                </ul>
+            </article>
+        </footer>
+        <div id="planMenu">
+            <section>
+                <h1>ЗАПОЗНАЙТЕ СЕ С ВЪЗМОЖНОСТИТЕ СИ ЗА ПЪТУВАНЕ</h1>
+                <button type='button'>
+                <article>
+                    <h4>ИЗБЕРЕТЕ ПОЛЕТ</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+            </button>
+                <button type='button'>
+                <article>
+                    <h4>ИЗБЕРЕТЕ ПОЛЕТ</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+            </button>
+                <button type='button'>
+                <article>
+                    <h4>ИЗБЕРЕТЕ ПОЛЕТ</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+            </button>
+            </section>
         </div>
-        <div class="line"></div>
-        <section name="premium" class="cheap-flights">
-            <p>CHEAP FLIGHTS*</p>
-            <article>
-                <img src="assets/images/milano.jpg" alt="">
-                <p>Special offer.Cheap flight form London</p>
-                <p>MILANO</p>
-            </article>
-            <article>
-                <img src="assets/images/poland.jpg" alt="">
-                <p>Special offer.Cheap flight form London</p>
-                <p>POLAND</p>
-            </article>
-            <article>
-                <img src="assets/images/vencia.jpg" alt="">
-                <p>Special offer.Cheap flight form London</p>
-                <p>VENECIA</p>
-            </article>
-            <article>
-                <img src="assets/images/vencia.jpg" alt="">
-                <p>Special offer.Cheap flight form London</p>
-                <p>VENECIA</p>
-            </article>
-        </section>
-        <section name="partners" class="partnres">
-            <p>PARTNERS OFFERS</p>
-            <article>
-                <img src="assets/images/booking.jpg" alt="">
-                <p>BOOKING</p>
-            </article>
-            <article>
-                <img src="assets/images/carrent.jpg" alt="">
-                <p>CAR RENTAL</p>
-            </article>
-            <article>
-                <img src="assets/images/transfer.jpg" alt="">
-                <p>AIRPORT TRANSFER</p>
-            </article>
-            <article>
-                <img src="assets/images/transfer.jpg" alt="">
-                <p>AIRPORT TRANSFER</p>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <article>
-            <h4>SERVICES</h4>
-            <ul>
-                <li><a href="">WIZZ Discount Club</a></li>
-                <li><a href="">WIZZ Flex</a></li>
-                <li><a href="">WIZZ Priority Boarding</a></li>
-                <li><a href="">Seat allocation</a></li>
-                <li><a href="">Hotels</a></li>
-                <li><a href="">Car rentals</a></li>
-                <li><a href="">Airport transfer</a></li>
-                <li><a href="">All services and fees</a></li>
-            </ul>
-        </article>
-        <article>
-            <h4>CUSTOMER SERVICE</h4>
-            <ul>
-                <li><a href="">Booking with Wizz Air</a></li>
-                <li><a href="">Baggage</a></li>
-                <li><a href="">Payments</a></li>
-                <li><a href="">Special Assistance</a></li>
-                <li><a href="">Online check-in</a></li>
-                <li><a href="">General Conditions of Carriage</a></li>
-            </ul>
-        </article>
-        <article>
-            <h4>FLIGHTS &amp DESTINATIONS</h4>
-            <ul>
-                <li><a href="">Current Flight Status</a></li>
-                <li><a href="">Destinations</a></li>
-                <li><a href="">Timetable</a></li>
-                <li><a href="">Cancellation information</a></li>
-            </ul>
-            <h4>FOLLOW US</h4>
-            <a href=""><img src="assets/images/yt-logo.png" alt=""></a>
-            <a href=""><img src="assets/images/fb-logo.png" alt=""></a>
-            <a href=""><img src="assets/images/Twitter-logo.png" alt=""></a>
-            <a href=""><img src="assets/images/insta-logo.png" alt=""></a>
-        </article>
-        <article>
-            <h4>ABOUT WIZZ AIR</h4>
-            <ul>
-                <li><a href="">Company information</a></li>
-                <li><a href="">News</a></li>
-                <li><a href="">WIZZ Magazine</a></li>
-                <li><a href="">Career</a></li>
-                <li><a href="">Press Office</a></li>
-                <li><a href="">For travel agents &amp partners</a></li>
-            </ul>
-        </article>
-    </footer>
-    <div id="planMenu">
-        <section>
-            <h1>ЗАПОЗНАЙТЕ СЕ С ВЪЗМОЖНОСТИТЕ СИ ЗА ПЪТУВАНЕ</h1>
-            <button type='button'>
-                <article>
-                    <h4>ИЗБЕРЕТЕ ПОЛЕТ</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                </article>
-            </button>
-            <button type='button'>
-                <article>
-                    <h4>ИЗБЕРЕТЕ ПОЛЕТ</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                </article>
-            </button>
-            <button type='button'>
-                <article>
-                    <h4>ИЗБЕРЕТЕ ПОЛЕТ</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                </article>
-            </button>
-        </section>
-    </div>
-    <form id="signIn" action="" method="get">
-        <span>Username</span><input type="text" value="Username" />
-        <span>Password</span><input type="password" value="Password" />
-        <input id="signInButton" type="submit" value="Sign in" />
-        <input id="cancelButton" type="submit" value="Cancel" />
-    </form>
+        <form class="popUp" id="signIn" action="" method="get">
+            <div class="formName">
+                <p>Sign In</p>
+                <i class="closeTab">&times</i>
+            </div>
+            <label>E-mail<input id="mail" type="text" placeholder="E-mail" /></label>
+            <label>Password<input id="pass" type="password" placeholder="Password" /></label>
+            <input id="signInButton" type="submit" value="Sign in" />
+            <input id="cancelButton" type="submit" value="Cancel" />
+            <a id="registerButton" href="">Registration</a>
+        </form>
+        <form class="popUp" id="registration" action="" method="post">
+            <div class="formName">
+                <p>Register</p>
+                <i class="closeTab">&times</i>
+            </div>
+            <input type="text" placeholder="First name" />
+            <input type="text" placeholder="Last name" />
+            <input type="text" placeholder="Mobile phone" />
+            <input type="text" placeholder="E-mail" />
+            <input type="password" placeholder="Password" />
+            <input id="createUser" type="submit" value="Register">
+            <input id="cancelRegistration" type="submit" value="Cancel">
+        </form>
 </body>
 
 </html>

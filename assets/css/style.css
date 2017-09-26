@@ -2,6 +2,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+nav {
+    box-sizing: border-box;
+}
+
 body header nav ul li {
     display: inline-block;
     height: 80px;
@@ -26,7 +30,7 @@ body header img {
     padding: 5px;
 }
 
-body header nav ul li button {
+body header nav ul li button.nav {
     color: white;
     background-color: navy;
     text-decoration: none;
@@ -207,18 +211,19 @@ main>section>article>img {
     background-color: yellow;
 }
 
-#signIn {
+.popUp {
     width: 35%;
     display: none;
     position: absolute;
     top: 200px;
     left: 500px;
-    height: 300px;
+    height: 400px;
     background-color: white;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
-#signIn span {
+#signIn label {
     font-size: 15px;
     text-align: center;
     display: block;
@@ -230,6 +235,15 @@ main>section>article>img {
     margin: auto;
     height: 2em;
     width: 50%;
+    border-radius: 5px;
+}
+
+#signIn a {
+    color: purple;
+    display: block;
+    text-align: center;
+    padding-top: 1em;
+    text-decoration: underline;
 }
 
 form#signIn input[type=submit] {
@@ -280,4 +294,56 @@ form#signIn input[type=submit] {
     padding: 20px;
     width: 200px;
     border: none;
+}
+
+#registration {
+    height: 500px;
+}
+
+#registration input {
+    display: block;
+    margin: auto;
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 3px;
+    width: 50%;
+}
+
+#registration label {
+    display: block;
+    text-align: center;
+}
+
+#createUser {
+    background-color: purple;
+    color: white;
+    font-weight: bolder;
+}
+
+#cancelRegistration {
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+}
+
+.formName {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(231, 224, 224);
+}
+
+.formName p {
+    color: navy;
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    display: inline-block;
+}
+
+.closeTab {
+    padding: 5px;
+    float: right;
+    font-size: 3em;
+    color: purple;
+    cursor: pointer;
 }
