@@ -78,26 +78,23 @@ button:hover {
 }
 
 .main-container {
-    height: 700px;
     background: url("../images/main.jpg");
     background-size: cover;
 }
 
 .search {
     display: inline-block;
-    width: 30%;
-    height: 80%;
-    margin: 50px 0 0 150px;
+    width: 40%;
+    margin: 100px;
     border-radius: 1em;
     background: rgba(160, 160, 160, 0.90);
 }
 
 .buttons {
-    height: 90%;
     width: 20%;
     border-radius: 1em;
     margin: 20px;
-    float: right;
+    float: left;
     box-sizing: border-box;
 }
 
@@ -248,18 +245,28 @@ form#signIn input[type=submit] {
 }
 
 .search-form {
+    box-sizing: border-box;
     background-color: whitesmoke;
-    width: 65%;
     height: 94%;
     margin: 1em 0.8em;
     border-radius: 1em;
     padding-top: 1em;
 }
 
-.search-form>form>.flight-choice {
+.search-form> form > .flight-choice {
     margin: 1em;
     border: 1px solid black;
 }
+.search-form > form {
+    box-sizing: border-box;
+}
+.search-form > form > fieldset{
+    display: inline-block;
+    margin: 1em;
+    border: 1px solid black;
+    background-color: white;
+}     
+
 
 .search-form>form p {
     padding: 20px;
